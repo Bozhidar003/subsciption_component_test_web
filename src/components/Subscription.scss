@@ -1,0 +1,38 @@
+:host {
+    --font-primary: "Roboto", sans-serif;
+    --color-primary: #f44336; 
+}
+
+.subscription {
+    text-align: center;
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+  
+    &__title {
+        font-family: var(--external-font-primary, var(--font-primary));
+        color: var(--external-color-primary, var(--color-primary));
+    }
+  
+    &__greeting {
+      font-size: 20px;
+      margin: 0 0 20px 0;
+    }
+  
+    &__input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+  
+    &__mentions {
+      font-size: 14px;
+      color: #666666;
+    }
+  }
